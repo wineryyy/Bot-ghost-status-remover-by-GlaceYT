@@ -61,7 +61,7 @@ function updateStatus() {
     activities: [{ name: currentStatus, type: ActivityType.Custom }],
     status: currentType,
   });
-  console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
+  console.log('\x1b[33m[ /rumeta ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
   currentStatusIndex = (currentStatusIndex + 1) % statusMessages.length;
   currentTypeIndex = (currentTypeIndex + 1) % statusTypes.length;
 }
